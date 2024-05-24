@@ -57,6 +57,7 @@ Arguments to try out different Optimizers for weight update and projection updat
 | LION      | ```--proj_type continuous_lion```     |
 | Adafactor      | ```--proj_type continuous_adafactor```     |
 | SGD      | ```--proj_type continuous_sgd```     |
+| Random   | ```--proj_type random``` |
 
 You can also control the sequence length by adding ```--max_length {sequence_length}``` in your launch command, which is default to 256.
 
