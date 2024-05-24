@@ -66,7 +66,7 @@ You can also control the sequence length by adding ```--max_length {sequence_len
 For example, to train a 60m model on C4, do the following:
 
 ```bash
-# LLaMA-60M, GaLore-Adam, 1 A100, 1 Node
+# LLaMA-60M, Online-Subspace-Descent-Adam, 1 A100, 1 Node
 torchrun --standalone --nproc_per_node 1 torchrun_main.py \
     --model_config configs/llama_60m.json \
     --lr 0.01 \
