@@ -9,7 +9,7 @@ Recently, a wide range of memory-efficient LLM training algorithms have gained s
 </div>
 
 ## Motivation
-Online PCA has way lower overhead then computing PCA, especially when model tensor shape gets larger.
+Online PCA has way lower overhead than computing PCA, especially when model tensor shape gets larger.
 <div align="center">
   <img src="imgs/system_benchmark.png" alt="Image 2" style="width: 550px; margin: 0 auto;">
 </div>
@@ -133,8 +133,6 @@ torchrun --standalone --nproc_per_node 1 torchrun_main.py \
     --single_gpu \
     --optimizer galore_adamw8bit_per_layer
 ```
-
-Currently per-layer weight updates technique is only supported for single GPU training (`--single_gpu`) without using `nn.parallel.DistributedDataParallel`. We are working on supporting multi-GPU training with per-layer weight updates.
 
 
 ## Citation
