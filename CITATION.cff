@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Memory-Efficient LLM Training with Online Subspace Descent"
+version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Liang"
+    given-names: "Kaizhao"
+year: 2024
+repository-code: ""
