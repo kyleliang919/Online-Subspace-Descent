@@ -46,9 +46,10 @@ In comparison with GaLore,
 Arguments to try out different Optimizers for weight update and projection update
 | Weight Optimizer | Arg  |
 |------------------|-----------------|
-| galore_adamw      | ```--optimizer galore_adamw```     |
-| galore_adafactor      | ```--optimizer galore_adafactor```     |
-| galore_lion      | ```--optimizer galore_lion```     |
+| Adamw      | ```--optimizer galore_adamw```     |
+| Adafactor      | ```--optimizer galore_adafactor```     |
+| Lion      | ```--optimizer galore_lion```     |
+| AdamW8bit | ```--optimizer galore_adamw8bit_per_layer``` |
 
 | Projection Optimizer | Arg  |
 |------------------|-----------------|
