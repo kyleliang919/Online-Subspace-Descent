@@ -139,7 +139,7 @@ torchrun --standalone --nproc_per_node 1 torchrun_main.py \
 
 ## Citation
 ```bibtex
-@misc{kaizhao2024online,
+@misc{liang2024online,
       title={Memory-Efficient LLM Training with Online Subspace Descent}, 
       author={Kaizhao Liang and Bo Liu and Lizhang Chen and Qiang Liu},
       year={2024},
