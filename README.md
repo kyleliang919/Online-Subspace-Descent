@@ -143,7 +143,7 @@ torchrun --standalone --nproc_per_node 1 torchrun_main.py \
       title={Memory-Efficient LLM Training with Online Subspace Descent}, 
       author={Kaizhao Liang and Bo Liu and Lizhang Chen and Qiang Liu},
       year={2024},
-      eprint={},
+      eprint={https://arxiv.org/pdf/2408.12857},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
