@@ -1,6 +1,6 @@
 # Online Subspace Descent
 
-This repo contains a pytorch implementation of [Memory-Efficient LLM Training with Online Subspace Descent]() (Arxiv paper coming soon), a followup on GaLore algorithm, proposed by [GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection](https://arxiv.org/abs/2403.03507).
+This repo contains a pytorch implementation of [Memory-Efficient LLM Training with Online Subspace Descent](https://arxiv.org/abs/2408.12857), a followup on GaLore algorithm, proposed by [GaLore: Memory-Efficient LLM Training by Gradient Low-Rank Projection](https://arxiv.org/abs/2403.03507).
 
 Recently, a wide range of memory-efficient LLM training algorithms have gained substantial popularity. These methods leverage the low-rank structure of gradients to project optimizer states into a subspace using projection matrix found by singular value decomposition (SVD). However, convergence of these algorithms is highly dependent on the update rules of their projection matrix. In this work, we provide the first convergence guarantee for arbitrary update rules of projection matrix. This guarantee is generally applicable to optimizers that can be analyzed with Hamiltonian Descent, including most common ones, such as LION, Adam. Inspired by our theoretical understanding, we propose Online Subspace Descent, a new family of subspace descent optimizer without SVD. Instead of updating projection matrix with eigenvectors, Online Subspace Descent updates projection matrix wtih online PCA. Online Subspace Descent is flexible and introduces only minimum overhead to training. We demonstrate that, for the task of pretraining LLaMA models ranging from 60M to 1B parameters on the C4 dataset, Online Subspace Descent achieves lower perplexity than state-of-the-art low-rank training methods across different settings and narrows the gap with full-rank baselines.
 
@@ -143,7 +143,7 @@ torchrun --standalone --nproc_per_node 1 torchrun_main.py \
       title={Memory-Efficient LLM Training with Online Subspace Descent}, 
       author={Kaizhao Liang and Bo Liu and Lizhang Chen and Qiang Liu},
       year={2024},
-      eprint={https://arxiv.org/pdf/2408.12857},
+      eprint={https://arxiv.org/abs/2408.12857},
       archivePrefix={arXiv},
       primaryClass={cs.LG}
 }
