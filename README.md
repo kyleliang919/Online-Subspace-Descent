@@ -17,20 +17,6 @@ Online PCA has way lower overhead than computing PCA, especially when model tens
 
 ## Installation
 
-### Install GaLore optimizer
-Install from pip:
-```bash 
-pip install online-subspace-descent-torch
-```
-
-or if you want to install from source:
-
-```bash
-git clone git@github.com:kyleliang919/Online-Subspace-Descent.git
-cd Online-Subspace-Descent
-pip install -e .
-```
-
 ### Install experiment dependencies
 
 ```bash
