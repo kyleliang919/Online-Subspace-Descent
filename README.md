@@ -20,7 +20,7 @@ Online PCA has way lower overhead than computing PCA, especially when model tens
 ### Install experiment dependencies
 
 ```bash
-pip install -r exp_requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage and Comparison with GaLore
